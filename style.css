@@ -10,7 +10,7 @@
   
   --width:84%;
   --mobile-width:92%;
-}
+} 
 *{
   margin: 0;
   padding: 0;
@@ -676,3 +676,238 @@ padding: 1.2rem 0;
 color: white;
 border-top: 1px solid white;
 }
+
+
+/* ======================MEDIA QUERY TABLET===========================  */
+@media screen and (max-width:1024px) {
+  h1{
+    font-size: 4.4rem;
+    letter-spacing: 3px;
+  }
+  h2{
+    font-size: 2.7rem;
+    letter-spacing: -3px;
+  }
+  h3{
+    font-size: 2.2rem;
+  }
+  h4{
+    font-size: 1.2rem;
+    
+  }
+  h5{
+    font-size: .9rem;
+  }
+  p{
+    line-height: 1.6rem;
+    font-size: .9rem;
+  }
+.container{
+  width: var(--mobile-width);
+}  
+section{
+  overflow-x: hidden;
+}
+
+/* ===== NAV BAR======== */
+
+body{
+  background-color: royalblue;
+  /* only to see the break point between the tablet and the laptop version */
+}
+
+nav .container{
+  width: 100%;
+}
+nav .container .logo{
+  margin-left: 1rem;
+}
+nav .container ul{
+  position: fixed;
+  top: 0;
+  left: 0;
+  flex-direction: column;
+  width: 16rem;
+  height: 100vh;
+  background: var(--primaryColor);
+  box-shadow: 1rem 0 2rem rgba(0, 0, 0 ,.2);
+  z-index: 3;
+}
+nav .container ul li{
+  height: 4.6rem;
+  display: flex;
+  align-items: center;
+}
+nav .container ul li a{
+  width: 100%;
+  padding: 0 0 1rem 2rem;
+}
+nav .container ul li a:hover{
+padding-left: 3rem;
+}
+nav button{
+  display: inline-block;
+  cursor: pointer;
+  background: transparent;
+  color:#0a0a0c;
+  margin-right: 2rem;
+  font-size: 1.6rem;
+}
+ nav button#close-btn{
+  display: none;
+ }
+
+ /* ============HEADER============================= */
+header{
+top: 7rem;
+height: 100%;
+}
+header .container{
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  margin-top: 0;
+}
+header .container .details{
+  display: none;
+}
+
+/* ========================PRODUCTS SECTION ====== */
+section#products .container{
+  width: var(--mobile-width);
+
+}
+
+
+/* ============NOS ATOUTS===================== */
+section#nosAtouts h2{
+  margin-bottom: 3rem;
+}
+section#nosAtouts .container {
+grid-template-columns: 1fr;
+};
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ======================MEDIA QUERY (MOBILE PHONE) ===========================  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
