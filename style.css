@@ -6,10 +6,10 @@
   --blackColor:#0a0a0c;
   --darkColor:#62656a;
   --whiteColor:#fff;
-  --lightColor:rgba(255,255,255,.8);
-  
+  --lightColor:rgba(255,255,255,.8);  
   --width:84%;
   --mobile-width:92%;
+
 } 
 *{
   margin: 0;
@@ -122,12 +122,17 @@ nav{
   width: 100vw;
   height: 4rem;
   display:block;
+  /* display: grid; */
   place-items: center;
   position: fixed;
   z-index: 2;
   /*    */
   background: #F6F8EA;
   /* box-shadow: 0 1rem 1rem rgba(0 0 0 .1); */
+}
+.window-scroll{
+background: #ffc7bb;
+box-shadow: 0 1rem 1rem rgba(0 0 0 .1)
 }
 nav ul{
   font-size: 1.2em;
@@ -678,6 +683,8 @@ border-top: 1px solid white;
 }
 
 
+
+
 /* ======================MEDIA QUERY TABLET===========================  */
 @media screen and (max-width:1024px) {
   h1{
@@ -711,10 +718,7 @@ section{
 
 /* ===== NAV BAR======== */
 
-body{
-  background-color: royalblue;
-  /* only to see the break point between the tablet and the laptop version */
-}
+
 
 nav .container{
   width: 100%;
@@ -732,6 +736,7 @@ nav .container ul{
   background: var(--primaryColor);
   box-shadow: 1rem 0 2rem rgba(0, 0, 0 ,.2);
   z-index: 3;
+  display: none;
 }
 nav .container ul li{
   height: 4.6rem;
@@ -782,28 +787,171 @@ section#products .container{
 section#nosAtouts h2{
   margin-bottom: 3rem;
 }
-section#nosAtouts .container {
+section#vosQuestions .content {
 grid-template-columns: 1fr;
-};
-
-
-
-
+}
+section#vosQuestions .content article{
+  padding: 1.4rem;
 
 }
 
+/* ============C T A ===================== */
+section#cta .container{
+  padding:4rem 2rem;
+}
+section#cta .container .info{
+  width: 66%;
+  align-self: flex-start;
+}
+section#cta .container .image{
+  position: absolute;
+  right: 11rem;
+}
+section#cta .container .btn{
+  z-index: 1;
+}
 
-
-
-
-
-
-
-
+footer .container{
+  grid-template-columns: 1fr 1fr;
+}
+}
 
 
 /* ======================MEDIA QUERY (MOBILE PHONE) ===========================  */
 
+@media screen and (max-width:600px) {
+  /* body{
+    background: yellow;
+  } */
+  h1{
+    font-size: 3.4rem;
+  }
+  h2{
+    font-size: 2.4rem;
+  }
+  h3{
+    font-size: 1.6rem;
+  }
+  h4{
+    font-size: .97rem;
+  }
+  h5{
+    font-size: .7rem;
+  }
+  p{
+    font-size: .84rem;
+  }
+
+  section{
+    padding-top: 8rem;
+  }
+  /* ========NAV BAR============ */
+  nav .container .icons{
+   gap: 1rem;
+  }
+  /* ========HEADRER============ */
+ header .container{
+  grid-template-columns: 1fr;
+}
+ header .container .info p{
+  font-size: 1rem;
+}
+ header .container .cta{
+  flex-direction: column;
+  margin-top: 1.4rem;
+}
+ header .container .header-image{
+  grid-row: 1;
+  width: 60vw;
+  margin: 0 auto;
+}
+ header .livraison{
+  display: none;
+}
+/* ==============COMMERCIAL============ */
+ section#commercial .container{
+  width: var(--mobile-width);
+  margin: 0 auto;
+}
+/* ==============PRODUCTS============ */
+ section#produits{
+  margin-top: 4rem;
+}
+ section#produits .container article{
+  grid-template-columns: 1fr;
+  text-align: center;
+  gap: 1.4rem;
+}
+ section#produits .container article p{
+  margin: 1rem 0;
+}
+ section#produits .container article .image{
+  width: 100%;
+  padding-left: 5rem;
+}
+
+/* =========NOS ATOUTS=========== */
+ section#nosAtouts .container .head .right{
+display: none;
+
+}
+ section#nosAtouts .container article{
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  text-align: center;
+}
+
+/* =========NOS CLIENTS=========== */
+ section#NosClients{
+  display: none;
+}
+
+/* =========NOS RECOMMANDATIONS=========== */
+ .swipper-slide{
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
+/* =========C T A=========== */
+ section#cta .container{
+  flex-direction: column;
+  height: fit-content;
+  padding: 2rem;
+}
+ section#cta .container .info{
+  width: 100%;
+}
+ section#cta .container .info h3{
+font-size: 2.3rem;
+
+}
+ section#cta .container .info p{
+font-size: 1rem;
+}
+ section#cta .container .image{
+position: relative;
+top: 2rem;
+right: 30%;
+}
+/* ============FOOTER=========== */
+ footer .container{
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  text-align: center;
+}
+ footer .container .logo{
+  margin: 0 auto;
+}
+ footer .socials{
+  justify-content: center;
+}
+ footer .socials i{
+  font-size: 1.5rem;
+}
+
+
+}
 
 
 

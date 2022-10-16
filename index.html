@@ -20,6 +20,9 @@
 </head>
 
 <body>
+
+  <!-- ==============NAV BAR=================== -->
+
  <nav>
   <div class="container">
     <a href="#" class="logo">
@@ -49,6 +52,8 @@
   <button id="close-btn"><i class="uil uil-multiply"></i></button>
   </div>
  </nav>
+
+
  
  <!--          HEADER SECTION              -->
  <header>
@@ -399,7 +404,7 @@
         </div>
       </article>
     </div>
-    <a href="vosQuestions.html" class="btn">Pour plus de details ...</a>
+    <a href="faq.html" class="btn">Pour plus de details ...</a>
   </div>
 </section>
 
@@ -484,6 +489,15 @@
 
 
 <script src="./main.js"></script>
+ <script> 
+
+// <!-- // SWIPER {SECTION RECOMMANDATION} -->
+const swiper = new Swiper('.swiper', {
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+  },
+});</script>
  <script>
   // montrer la video
 const montrerVideo =document.querySelector('#montrerVideo');
