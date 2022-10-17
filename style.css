@@ -188,7 +188,7 @@ header{
   top: 4rem;
   display:grid;
   /* place-items: center; */
-  background: url(./Assets/Images/Screenshot1.png);
+  /* background: url(./Assets/Images/Screenshot1.png); */
   background-repeat: no-repeat;
   background-size: cover;
   
@@ -408,18 +408,14 @@ section#produits a:hover{
 
 
 /*---------------------NOS ATOUTS-------------------------*/
-section#nosAtouts .container {
-   border: 3px solid red;
-}
 section#nosAtouts .container .head{
   display: flex;
   justify-content: space-between;
-  border: 3px solid red;
- 
 }
 
 section#nosAtouts .container .head .left h2{
-  text-align: center;
+  margin: 20px 0 0 35px;
+ align-items: center;
 margin-bottom: 1.5rem;
 }
 section#nosAtouts .container .head .left h4{
@@ -435,36 +431,83 @@ section#nosAtouts .container .head .right{
 
 }
 section#nosAtouts .container .head .right .image{
-  width: 3rem;
-  
+  width: 5rem;
   padding-top: 10px;
+}
+section#nosAtouts .container .head .right p{
+  font-size: .8rem;
+  padding-top: 35px;
+  width: 90%;
+  margin-left: -20px;
 }
 
 section#nosAtouts .container .head .right .image img{
-margin-top: 50% ;
-
+margin-top: 40px ;
 }
 
 section#nosAtouts .container .head .right h4{
-  margin-top: 1rem;
+  margin: 5px 0 0 -20px;
   color: var(--blackColor);
   font-weight: 700;
+  font-size: .8rem;
 }
 
 section#nosAtouts .container article{
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 3rem;
-  margin-top: 6rem;
+  gap: 10rem;
+  margin-top: 3rem;
+ margin: 20px 5% ;  align-items: center;
 }
+
+section#nosAtouts .container article .image{
+  width: 30%;
+  margin-left: 40%;
+
+}
+section#nosAtouts .container article .image2{
+  width: 40%;
+  margin-right: 40%;
+
+}
+section#nosAtouts .container article .info{
+  margin-right: 40%;
+  padding-top: 30px;
+
+}
+section#nosAtouts .container article .info2{
+  margin-left: 40%;
+  padding-top: 30px;
+
+}
+section#nosAtouts .container article:nth-child(2){
+  background: linear-gradient(to top, #19547b, #ffd89b); 
+}
+section#nosAtouts .container article:nth-child(3){
+background: linear-gradient(to bottom, #ffd194, #70e1f5); 
+
+}
+section#nosAtouts .container article:nth-child(3){
+background: linear-gradient(to bottom, #ffd194, #70e1f5); 
+
+}
+
+
 section#nosAtouts .container article h4{
   margin-bottom: 1.4rem;
   color: var(--blackColor);
   font-weight: 700;
+  text-decoration: underline;
+}
+section#nosAtouts .container article h5{
+  text-decoration: underline;
+  color: white;
+  letter-spacing: .1rem;
 }
 section#nosAtouts .container article p{
   margin-bottom: 1rem;
+  color: white;
 }
 section#nosAtouts .container article a{
   display: inline-block;
