@@ -526,20 +526,26 @@ section#nosAtouts .container article a:hover img{
 
 
 /* ================ NOS CLIENTS ========================= */
+section#NosClients{
+  padding-right:  4rem;
+  padding-left:  4rem;
+}
 section#NosClients h4{
   text-align:center;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 1.7rem;
   font-weight: 700;
 }
 section#NosClients .clients{
   display: flex;
+  gap: 10px;
   align-items: center;
   justify-content: space-between;
   margin-top: 4rem;
-
 }
-
+section#NosClients .clients div{
+width: 60px;
+}
 
 /* =================LES RECOMMANDATIONS========== */
 .swiper{
@@ -550,6 +556,7 @@ section#NosClients .clients{
 .swiper-wrapper{
   width: 100vw;
   margin-bottom: 3rem;
+  border: #f24822 3px solid;
 }
  
 .swiper-slide{
