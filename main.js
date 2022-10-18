@@ -64,7 +64,6 @@ window.addEventListener('scroll',()=>{
 
   nav.classList.toggle('window-scroll', window.screenY> 0);
   
-  
 })
 
 

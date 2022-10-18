@@ -549,16 +549,11 @@ width: 60px;
 
 /* =================LES RECOMMANDATIONS========== */
 .swiper{
-  max-width: 100vw;
+  width: var(--width);
   height: 100%;
-  margin-top: 12rem;
+  margin-top: 6rem;
 }
-.swiper-wrapper{
-  width: 100vw;
-  margin-bottom: 3rem;
-  border: #f24822 3px solid;
-}
- 
+
 .swiper-slide{
   display: flex;
   align-items: center;
@@ -567,19 +562,23 @@ width: 60px;
 }
 .swiper-slide .details h4{
   color: blue;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  padding-bottom: 3.5rem;
+
 }
-.swipper-slide .details h2{
-  margin: 1rem 0;
+.swiper-slide .details h2{
+  margin:  0;
+  font-size: 2rem;
 }
 .swiper-slide .details p{
   margin-bottom: 1rem;
 }
 .swiper-slide .details h5{
-  color: yellow;
+  color: rgb(0, 208, 255);
   font-size: 1.3rem;
   font-family: '',sans-serif;
   margin: 1.6rem 0 0.4rem;
+  font-weight: 700;
 }
 .swiper-pagination-bullet{
   background: blue;
@@ -594,7 +593,8 @@ section#vosQuestions h2{
 section#vosQuestions .content{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  gap: 1.3rem;
+  padding: 2rem;
 }
 section#vosQuestions .content article{
   padding: 2rem;
@@ -668,21 +668,25 @@ section#cta .container .btn{
 
 footer{
   background: yellowgreen;
-  margin-top: 8rem;
-  padding-top: 5rem;
+  margin-top: 2rem;
+  padding-top: 2rem;
   font-size: .9rem;
   color: white;
+  border: 3px solid red;
 }
 
 footer .container{
+  border: 3px solid rgb(202, 111, 111);
   display: grid;
   grid-template-columns: repeat(4,1fr);
   gap:5rem;
   justify-content: space-between;
 }
 footer .container h4{
-  color: white;
-  margin-bottom: 1.6rem;
+  color: rgb(34, 17, 182);
+  margin-bottom: 2rem;
+  font-weight: 800;
+  
 }
 footer .container .f1 .logo{
   width: 70px;
@@ -692,7 +696,7 @@ footer .container .f1 p{
   margin: 1rem 0 2rem;
 }
 footer .container .f1 .abonnement{
-/* background: transparent; */
+background: transparent;
 border: 1px solid white;
 display: flex;
 align-items:center;
@@ -703,10 +707,12 @@ footer .container .f1 .abonnement input{
 background: transparent;
 color: white;
 margin-left: 1rem;
+height: 2rem;
+font-size: 1.5rem;
 }
 footer .container .f1 .abonnement input::placeholder{
   color: salmon;
-
+ font-size: 1.5rem;
 }
 footer .container .f1 .abonnement button{
 background: white;
@@ -721,10 +727,11 @@ footer .container .f1 .abonnement button:hover{
 background: salmon;
 color: white;
 }
+footer .container li {
+  margin-bottom: 1.5rem;
+}
 footer .container li a{
-  margin-bottom: 1rem;
   color: rgb(237, 237, 219) ;
-
 }
 footer .container li a:hover{
   color: rgb(242, 69, 69);
@@ -734,9 +741,12 @@ footer .container .f4 p{
   margin-bottom: 1.6rem;
 
 }
+footer .container .socials a{
+font-size: 2rem;
+}
 footer .container .socials{
  display: flex;
- gap: 1rem;
+ gap: 2.5rem;
  font-size: 1.4rem;
 }
 footer .copyright{
@@ -772,7 +782,7 @@ border-top: 1px solid white;
   }
   p{
     line-height: 1.6rem;
-    font-size: .9rem;
+    font-size: .9rem; 
   }
 .container{
   width: var(--mobile-width);
