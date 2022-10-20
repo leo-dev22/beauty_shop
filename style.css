@@ -9,7 +9,6 @@
   --lightColor:rgba(255,255,255,.8);  
   --width:84%;
   --mobile-width:92%;
-
 } 
 *{
   margin: 0;
@@ -187,7 +186,7 @@ header{
   position: relative;
   top: 4rem;
   display:grid;
-  /* place-items: center; */
+  place-items: center;
   /* background: url(./Assets/Images/Screenshot1.png); */
   background-repeat: no-repeat;
   background-size: cover;
@@ -235,13 +234,13 @@ header .container .info {
   /* border: 5px blue solid; */
   width: 33%;
 }
- header .main-product{
+ /* header .main-product{
   background-image: url(./Assets/Images/loose_setting_powder_translucent.png);
   background-repeat: no-repeat;
   background-size: contain;
-  width: 33%;
+  width: 40%;
   height: 400px;
-} 
+}  */
 
 .number-style{
   font-size: 1.5em;
@@ -763,8 +762,9 @@ font-size: 1.2rem;
 /* ======================MEDIA QUERY TABLET===========================  */
 @media screen and (max-width:1024px) {
   h1{
-    font-size: 4.4rem;
+    font-size: 3rem;
     letter-spacing: 3px;
+    
   }
   h2{
     font-size: 2.7rem;
@@ -809,7 +809,7 @@ nav .container ul{
   width: 16rem;
   height: 100vh;
   background: var(--primaryColor);
-  box-shadow: 1rem 0 2rem rgba(0, 0, 0 ,.2);
+  box-shadow: 1rem 0 4rem rgba(0, 0, 0 ,.2);
   z-index: 3;
   display: none;
 }
@@ -823,7 +823,7 @@ nav .container ul li a{
   padding: 0 0 1rem 2rem;
 }
 nav .container ul li a:hover{
-padding-left: 3rem;
+padding-left: 2rem;
 }
 nav button{
   display: inline-block;
@@ -837,6 +837,10 @@ nav button{
   display: none;
  }
 
+ #menu-btn,#close-btn{
+  margin: 0 80px 30px 0;
+ }
+
  /* ============HEADER============================= */
 header{
 top: 7rem;
@@ -847,7 +851,7 @@ header .container{
   gap: 0;
   margin-top: 0;
 }
-header .container .details{
+header .container .details-card{
   display: none;
 }
 
